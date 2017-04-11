@@ -1,0 +1,75 @@
+(function ($, window, document, undefined) {
+
+    'use strict';
+
+    $(function () {
+        // FastShell
+
+        // More info https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            width: "100%",
+            height: "100%",
+            margin: 0,
+            controls: false,
+            progress: false
+        });
+
+        Reveal.addEventListener('slidechanged', function (event) {
+            // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+
+            //console.log($(event.currentSlide).find('.animated'));
+
+            $(event.currentSlide).find('.animated').each(function (e) {
+
+                var elm = this;
+                var newone = elm.cloneNode(true);
+                elm.parentNode.replaceChild(newone, elm);
+
+                // var newone = $(e).clone(true);
+                //
+                // $(e).before(newone);
+                //
+                // setTimeout(function () {
+                //     $(e).remove();
+                // }, 1000);
+
+
+                // e.classList.remove("animated");
+                //
+                // e.classList.add("animated");
+
+                //e.removeClass('.animated').addClass('animated bounceOutLeft');
+            });
+
+            if (event.indexh == 1) {
+                //$('.element-1-dosing').addClass('animated delay-1s fadeIn');
+            }
+
+        });
+
+        Reveal.addEventListener('fragmentshown', function (event) {
+            // event.fragment = the fragment DOM element
+
+            console.log('fragmentshown: ' + event.indexh);
+        });
+        Reveal.addEventListener('fragmenthidden', function (event) {
+            // event.fragment = the fragment DOM element
+
+            console.log('fragmenthidden: ' + event.indexh);
+        });
+
+
+        $(".footer-logo-menu-link").click(function(){
+            $("#sidebar-menu").toggleClass("active");
+            return false;
+        });
+
+
+        $(".sidebar-menu-list a").click(function(){
+            $("#sidebar-menu").removeClass("active");
+            //return false;
+        });
+
+    });
+
+})(jQuery, window, document);

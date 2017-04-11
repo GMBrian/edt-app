@@ -1,0 +1,47 @@
+.footer {
+
+}
+
+.navbar-inverse {
+  //position: relative;
+  background-color: transparent;
+  border: none;
+}
+
+a.footer-logo-menu-link {
+  position: initial;
+}
+
+img.footer-logo-menu {
+  position: absolute;
+  width: 21%;
+  right: 0;
+  bottom: 0;
+  float: right;
+}
+
+img.footer-logo {
+  position: absolute;
+  width: 10%;
+  right: 2%;
+  bottom: 11%;
+  float: right;
+}
+
+a.footer-smpc {
+  position: absolute;
+  width: 6%;
+  bottom: 5.8%;
+  left: 2.1%;
+
+  img {
+    position: relative;
+    width: 100%;
+  }
+}
+
+img.footer-background {
+  float: left;
+  width: 100%;
+  //background: url('../img/bg-footer.png');
+}

@@ -1,0 +1,49 @@
+.sidebar {
+
+}
+
+body .sidebar-menu-container {
+  width: 33.3%;
+  position: absolute;
+  top: 0;
+  right: -33.3%;
+  bottom: 0;
+  z-index: 100;
+  padding: 4% 4.5%;
+
+  transition: all 0.3s ease;
+
+  &.active {
+    right: 0;
+  }
+
+  @include gradient-horizontal(#a19fcf, #dcdaef, 0%, 100%);
+
+  .sidebar-menu-list {
+    list-style: none;
+    text-align: left;
+
+    li {
+      border-bottom: 1px solid #ffffff;
+
+      a {
+        font-family: 'terminal_dosisregular', sans-serif;
+        display: block;
+        font-size: 140%;
+        padding: 5px 0;
+        line-height: 160%;
+        color: #ffffff;
+
+        &:hover,
+        &:active {
+          text-decoration: none;
+        }
+
+        .menu-number {
+          font-family: 'terminal_dosisregular', sans-serif;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

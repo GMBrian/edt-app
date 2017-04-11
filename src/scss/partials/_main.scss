@@ -1,0 +1,945 @@
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'terminal_dosisbold';
+  src: url('../fonts/terminaldosis-bold-webfont.woff2') format('woff2'),
+  url('../fonts/terminaldosis-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'terminal_dosisregular';
+  src: url('../fonts/terminaldosis-regular-webfont.woff2') format('woff2'),
+  url('../fonts/terminaldosis-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'terminal_dosissemibold';
+  src: url('../fonts/terminaldosis-semibold-webfont.woff2') format('woff2'),
+  url('../fonts/terminaldosis-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'wingdings_3';
+  src: url('../fonts/wingdings_3.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sourcesanspro_regular';
+  src: url('../fonts/sourcesanspro-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sourcesanspro_italic';
+  src: url('../fonts/sourcesanspro-italic') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sourcesanspro_semibold';
+  src: url('../fonts/sourcesanspro-semibold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sourcesanspro_bold';
+  src: url('../fonts/sourcesanspro-bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'sourcesanspro_black';
+  src: url('../fonts/sourcesanspro-black.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.delay-0-5s {
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  -o-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+.delay-1s {
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  -o-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+.delay-1-5s {
+  -moz-animation-delay: 1.5s;
+  -webkit-animation-delay: 1.5s;
+  -o-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
+.delay-2s {
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+.delay-2-5s {
+  -moz-animation-delay: 2.5s;
+  -webkit-animation-delay: 2.5s;
+  -o-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+
+.delay-3s {
+  -moz-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+.delay-3-5s {
+  -moz-animation-delay: 3.5s;
+  -webkit-animation-delay: 3.5s;
+  -o-animation-delay: 3.5s;
+  animation-delay: 3.5s;
+}
+
+.delay-4s {
+  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+
+.delay-4-5s {
+  -moz-animation-delay: 4.5s;
+  -webkit-animation-delay: 4.5s;
+  -o-animation-delay: 4.5s;
+  animation-delay: 4.5s;
+}
+
+.color-purple {
+  color: #9077b4 !important;
+}
+
+.text-bold {
+  font-family: "sourcesanspro_semibold", sans-serif !important;
+}
+
+.font-wingdings-3 {
+  font-family: "wingdings_3", sans-serif !important;
+}
+
+.reveal .slides > section,
+.reveal .slides > section > section {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+}
+
+body sup.slider-header-small {
+  font-size: 50%;
+  line-height: 100%;
+  top: -0.7em;
+}
+
+.slide-body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
+  &.slide-body-sub {
+    @include gradient-vertical(#8677b6, #ffffff, 0%, 65%);
+  }
+
+  .slide-element {
+    position: absolute;
+  }
+
+  .slide-element-front {
+    z-index: 1100;
+    pointer-events: none;
+  }
+
+  .slide-box-container {
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide-box {
+    font-family: 'sourcesanspro_semibold', sans-serif;
+    font-size: 200%;
+    color: #fff;
+
+    width: 66%;
+    //position: absolute;
+    //top: 50%;
+    //left: 50%;
+    //transform: translate(-50%, -50%);
+
+    @include gradient-vertical(#c1d108, #a2bf1a);
+
+    display: inline-block;
+    border-radius: 10px;
+    padding: 6px 10px 8px;
+    z-index: 10;
+  }
+
+  .slide-header {
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    padding: 0 5%;
+
+    h2,
+    h3,
+    h4 {
+      font-family: 'terminal_dosissemibold', sans-serif;
+      padding: 0 0 1%;
+    }
+
+    h2 {
+      font-size: 300%;
+      text-align: left;
+      color: #9077b4;
+      line-height: 100%;
+    }
+
+    h3 {
+      font-size: 240%;
+      text-align: left;
+      color: #ec672f;
+      line-height: 100%;
+    }
+
+    h4 {
+      font-size: 200%;
+      text-align: left;
+      color: #000000;
+      line-height: 100%;
+    }
+  }
+
+  .section-box {
+    background-color: #ffffff;
+    font-family: 'sourcesanspro_regular', sans-serif;
+
+    border-radius: 20px;
+
+    .section-box-header {
+      font-size: 160%;
+      line-height: 120%;
+      color: #ffffff;
+      margin-bottom: 10px;
+      padding: 10px 10px 10px 18px;
+      background-color: #9077b3;
+      font-family: 'sourcesanspro_semibold', sans-serif;
+      text-align: left;
+
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+  }
+
+  .section-box .element-list {
+    padding: 10px 20px 20px 40px;
+  }
+
+  .element-list {
+    font-size: 160%;
+    line-height: 120%;
+    font-family: "sourcesanspro_regular", sans-serif;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .details-bottom {
+    width: 65.3%;
+    left: 17.35%;
+    bottom: 12%;
+    font-family: "sourcesanspro_regular", sans-serif;
+    font-size: 90%;
+    line-height: 120%;
+    text-align: left;
+  }
+
+  .element-icon-info {
+    width: 2.5%;
+
+    img {
+      position: relative;
+      width: 100%;
+    }
+  }
+}
+
+.slides {
+  .slide-1 {
+    img.element-3-vrouwen {
+      bottom: 0;
+      left: -5.7%;
+      width: 74%;
+    }
+
+    img.element-logo-rekovelle {
+      top: 10.2%;
+      right: 6.2%;
+      width: 29%;
+    }
+
+    img.element-ios-app-hand {
+      bottom: 0;
+      right: 7.8%;
+      width: 24.4%;
+    }
+  }
+
+  .slide-2 {
+    img.element-1-dosing {
+      width: 27.5%;
+      left: 5.3%;
+      bottom: 26.4%;
+    }
+    img.element-2-dosing {
+      width: 27.5%;
+      left: 25%;
+      bottom: 26.4%;
+    }
+    img.element-3-dosing {
+      width: 27.5%;
+      left: 45%;
+      bottom: 26.4%;
+    }
+    img.element-4-dosing {
+      width: 27.5%;
+      left: 66%;
+      bottom: 26.4%;
+    }
+  }
+
+  .slide-3 {
+    img.element-oocyten {
+      width: 65.5%;
+      left: 16%;
+      top: 28.8%;
+    }
+  }
+
+  .slide-4 {
+    img.element-startdosering {
+      width: 43%;
+      left: 25.8%;
+      top: 23.5%;
+    }
+  }
+
+  .slide-5 {
+    img.element-bol-dosering-633 {
+      left: 32.2%;
+      top: 24.2%;
+      width: 12.3%;
+    }
+    img.element-bol-dosering-12 {
+      left: 48.6%;
+      top: 28.3%;
+      width: 11.9%;
+    }
+    img.element-bol-dosering-1066 {
+      left: 66.6%;
+      top: 34.2%;
+      width: 8.7%;
+    }
+    img.element-3-vrouwen-dosering {
+      left: 17.6%;
+      top: 38.1%;
+      width: 56.8%;
+    }
+  }
+
+  .slide-6 {
+    img.element-zittend-cellijn {
+      left: 15.3%;
+      top: 28.8%;
+      width: 45%;
+    }
+
+    .slide-box-cellijn-1 {
+      width: 22%;
+      top: 32.3%;
+      left: 5%;
+      line-height: 120%;
+      font-size: 165%;
+      padding: 10px 10px 14px;
+    }
+
+    .slide-box-cellijn-2 {
+      width: 24%;
+      left: 50%;
+      top: 20%;
+      line-height: 120%;
+      font-size: 165%;
+      padding: 10px 10px 14px;
+    }
+
+    .list-cellijn {
+      font-size: 160%;
+      line-height: 120%;
+      left: 57%;
+      font-family: "sourcesanspro_regular", sans-serif;
+      top: 58.1%;
+      width: 42%;
+      text-align: left;
+    }
+  }
+
+  .slide-7-1 {
+    img.element-algoritme {
+      width: 87.3%;
+      left: 5%;
+      top: 29.7%;
+    }
+  }
+
+  .slide-7-2 {
+    .element-text-dosisalgoritme {
+      text-align: left;
+      line-height: 120%;
+      font-size: 160%;
+      left: 12.4%;
+      width: 79.9%;
+      top: 22.7%
+    }
+
+    .element-box-dosisalgoritme-1 {
+      width: 48.5%;
+      left: 12.4%;
+      top: 34.4%;
+    }
+
+    .element-box-dosisalgoritme-2 {
+      width: 29%;
+      left: 63.3%;
+      top: 34.4%;
+    }
+  }
+
+  .slide-7-3 {
+
+    .element-ovariele-reserve {
+      left: 10.3%;
+      top: 15.7%;
+      width: 78.3%;
+    }
+  }
+
+  .slide-7-4 {
+    .element-ovariele-reserve-list {
+      left: 11.5%;
+      width: 30.5%;
+      top: 22.2%;
+      padding-top: 0;
+
+      li {
+        margin: 0 0 8% 0;
+      }
+    }
+
+    img.element-ovariele-reserve {
+      left: 44.3%;
+      width: 42%;
+      top: 22.2%;
+    }
+  }
+
+  .slide-7-5 {
+
+    img.element-grafiek-amh-afc {
+      left: 5%;
+      width: 90%;
+      top: 21%;
+    }
+  }
+
+  .slide-7-6 {
+
+    img.element-table-bmi {
+      left: 12.5%;
+      width: 83.1%;
+      top: 19.2%;
+    }
+  }
+
+  .slide-8 {
+
+    img.element-table-dosering {
+      left: 13.3%;
+      top: 17.8%;
+      width: 81.3%;
+    }
+
+    img.element-dosering {
+      top: 16.5%;
+      left: 1.9%;
+      width: 17.1%;
+    }
+
+    .element-dosering-details {
+      font-size: 110%;
+      line-height: 140%;
+      top: 57%;
+      left: 22.2%;
+      width: 30.3%;
+      text-align: right;
+    }
+  }
+
+  .slide-9 {
+
+    img.element-table-dosering {
+      left: 12.3%;
+      top: 19.6%;
+      width: 74.3%;
+    }
+  }
+
+  .slide-10 {
+
+    img.element-table-indivueel {
+      top: 29.4%;
+      left: 5%;
+      width: 90%;
+    }
+
+    .ovariale-respons-sub15 {
+      z-index: 1;
+      left: 46.4%;
+      top: 32%;
+    }
+
+    .ovariale-respons-post15 {
+      z-index: 1;
+      left: 90%;
+      top: 32%;
+    }
+  }
+
+  .slide-11 {
+
+    img.element-grafiek-effectiviteit {
+      left: 5%;
+      top: 33.6%;
+      width: 78.4%;
+    }
+  }
+
+  .slide-12-1 {
+
+    img.element-table-registratiestudie {
+      left: 5.5%;
+      top: 22.9%;
+      width: 73.1%;
+    }
+
+    img.element-table-registratiestudie-info {
+      left: 78.9%;
+      top: 34.7%;
+      width: 18.5%;
+    }
+
+    .details-bottom {
+      left: 5.5%;
+      top: 77.5%;
+    }
+  }
+
+  .slide-12-2 {
+
+    .element-studie-opzet-list {
+      left: 11%;
+      top: 22.9%;
+      width: 61%;
+
+      p {
+        font-family: "sourcesanspro_semibold", sans-serif;
+        text-align: left;
+        margin: 0;
+        font-size: 160%;
+        line-height: 120%;
+      }
+
+      .element-list {
+        padding: 0 20px 10px;
+      }
+    }
+
+    img.element-studie-opzet-vrouw {
+      left: 79%;
+      bottom: 0;
+      width: 17.2%;
+    }
+  }
+
+  .slide-12-3 {
+
+    img.element-protocol-vrouw {
+      left: 51.2%;
+      top: 0.5%;
+      width: 32.5%;
+    }
+
+    img.element-grafiek-protocol {
+      left: 5%;
+      top: 27.8%;
+      width: 81.5%;
+    }
+  }
+
+  .slide-12-4 {
+
+    img.element-table-karakteristieken {
+      left: 5.3%;
+      top: 24.3%;
+      width: 73%;
+    }
+  }
+
+  .slide-13 {
+
+    img.element-grafiek-groep {
+      left: 4.5%;
+      top: 32.5%;
+      width: 55.1%;
+    }
+  }
+
+  .slide-14 {
+
+    img.element-aanpak-1 {
+      left: 37.7%;
+      top: 21.1%;
+      width: 25.2%;
+    }
+
+    img.element-aanpak-2 {
+      left: 36.6%;
+      top: 32.8%;
+      width: 27.9%;
+    }
+
+    img.element-aanpak-3 {
+      left: 27.5%;
+      top: 47.5%;
+      width: 45.6%;
+    }
+
+    img.element-aanpak-4 {
+      left: 36.6%;
+      top: 57.5%;
+      width: 27.9%;
+    }
+
+    img.element-aanpak-5 {
+      left: 27.5%;
+      top: 63.9%;
+      width: 45.6%;
+    }
+
+    img.element-rekovelle-pen {
+      left: 68.6%;
+      top: 12.5%;
+      width: 27.3%;
+    }
+
+    img.element-aanpak-vrouw {
+      left: 8.6%;
+      top: 20%;
+      width: 19.7%;
+    }
+  }
+
+  .slide-15-1 {
+
+    img.element-grafiek-aanpak {
+      left: 10.3%;
+      top: 28.9%;
+      width: 71.8%;
+    }
+
+    img.element-aanpak-vrouw-2 {
+      left: 50.1%;
+      top: 3.8%;
+      width: 31%;
+    }
+
+    .element-aanpak-list {
+      left: 12.4%;
+      top: 56.2%;
+      width: 71.8%;
+    }
+  }
+
+  .slide-15-2 {
+
+    img.element-immunoasay {
+      left: 56.3%;
+      top: 42.9%;
+      width: 33.2%;
+    }
+
+    .element-immunoassay-list {
+      top: 28%;
+      left: 11.5%;
+      width: 72.5%;
+
+      > li > ul {
+        padding-left: 30px;
+        margin-bottom: 15px;
+
+        li {
+        }
+      }
+    }
+  }
+
+  .slide-15-3 {
+
+    img.element-table-antagonist {
+      left: 5%;
+      top: 27.2%;
+      width: 90%;
+    }
+  }
+
+  .slide-15-4 {
+
+    img.element-table-antagonist-protocol {
+      left: 4.2%;
+      top: 26%;
+      width: 83%;
+    }
+  }
+
+  .slide-15-5 {
+
+    img.element-table-antagonist-protocol-2 {
+      left: 1%;
+      top: 24.2%;
+      width: 98%;
+    }
+  }
+
+  .slide-16 {
+
+    img.element-ondersteuning {
+      left: 49%;
+      top: 26.4%;
+      width: 52%;
+    }
+
+    .element-ondersteuning-list {
+      left: 5%;
+      top: 23%;
+      width: 50%;
+
+      p {
+        font-family: "sourcesanspro_semibold", sans-serif;
+        text-align: left;
+        margin: 0;
+        font-size: 220%;
+        line-height: 120%;
+      }
+
+      .element-list {
+        padding: 0 0 10px 80px;
+        font-size: 160%;
+        line-height: 130%;
+      }
+    }
+  }
+
+  .slide-17 {
+    .element-app-list {
+      left: 5%;
+      top: 24.5%;
+      width: 50%;
+    }
+
+    img.appstore {
+      width: 30%;
+      margin: 0 4%;
+    }
+    img.googleplay {
+      width: 30%;
+      margin: 0 4%;
+    }
+
+    .element-app-hand {
+      left: 50%;
+      bottom: 0;
+      width: 36.6%;
+    }
+
+    .element-app-list {
+      left: 5%;
+      top: 23%;
+      width: 50%;
+
+      p {
+        font-family: "sourcesanspro_semibold", sans-serif;
+        text-align: left;
+        margin: 0;
+        font-size: 220%;
+        line-height: 120%;
+      }
+
+      .element-list {
+        padding: 0 0 10px 80px;
+        font-size: 160%;
+        line-height: 130%;
+      }
+    }
+  }
+
+  .slide-18 {
+
+    img.element-uniek-vrouwen {
+      bottom: 0;
+      left: 0;
+      width: 55%;
+    }
+
+    img.element-bol-dosering-633 {
+      left: 15.5%;
+      top: 24.2%;
+      width: 9%;
+    }
+    img.element-bol-dosering-633-lijn {
+      left: 12.5%;
+      top: 31.2%;
+      width: 3.4%;
+    }
+
+    img.element-bol-dosering-12 {
+      left: 32%;
+      top: 28.6%;
+      width: 9%;
+    }
+    img.element-bol-dosering-12-lijn {
+      left: 28.5%;
+      top: 35.3%;
+      width: 3.2%;
+    }
+
+    img.element-bol-dosering-1066 {
+      left: 47.2%;
+      top: 33.4%;
+      width: 9%;
+    }
+    img.element-bol-dosering-1066-lijn {
+      left: 48.8%;
+      top: 47.6%;
+      width: 3%;
+    }
+
+    .element-delta {
+      left: 60%;
+      width: 35%;
+      bottom: 27.9%;
+      padding: 2.2% 3%;
+      border-radius: 15px;
+      box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.3);
+
+      @include gradient-vertical(#c1d108, #a2bf1a);
+
+      h4 {
+        color: #ffffff;
+        text-align: left;
+        font-size: 190%;
+        font-family: "terminal_dosissemibold", sans-serif;
+      }
+
+      .element-list {
+        padding: 10px 20px;
+        font-size: 155%;
+      }
+
+      p {
+        text-align: left;
+        font-family: "sourcesanspro_regular", sans-serif;
+        font-size: 140%;
+
+      }
+    }
+
+    .details-bottom {
+      left: 60%;
+      width: 28%;
+      bottom: 16.5%;
+    }
+  }
+
+  .slide-19 {
+
+    .element-references {
+      top: 10%;
+      left: 12%;
+      font-size: 130%;
+      width: 86%;
+      line-height: 125%;
+    }
+  }
+
+  .slide-20 {
+
+    .element-productinformatie {
+      left: 5%;
+      width: 90%;
+      top: 16.8%;
+      text-align: justify;
+
+      p {
+        margin-bottom: 20px;
+        font-size: 105%;
+        line-height: 140%;
+        font-family: "sourcesanspro_regular", sans-serif;
+      }
+    }
+
+    .element-vertical-mark {
+      top: 31%;
+      right: 1.5%;
+
+      transform: rotate(90deg);
+      transform-origin: right top 0;
+
+      p {
+        font-family: "sourcesanspro_regular", sans-serif;
+        font-size: 80%;
+      }
+    }
+  }
+}
+
+.source-sans-bold {
+  font-family: "sourcesanspro_semibold", sans-serif !important;
+}
