@@ -8469,9 +8469,9 @@ body .sidebar-menu-container {
   z-index: 100;
   padding: 4% 4.5%;
   transition: all 0.3s ease;
-  background-image: linear-gradient(to right, #a19fcf 0%, #dcdaef 100%);
+  background-image: linear-gradient(to right, #9078b5 0%, #dcdaef 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFA19FCF', endColorstr='#FFDCDAEF', GradientType=1); }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9078B5', endColorstr='#FFDCDAEF', GradientType=1); }
   body .sidebar-menu-container.active {
     right: 0; }
   body .sidebar-menu-container .sidebar-menu-list {
@@ -8767,7 +8767,7 @@ body sup.slider-header-small {
 
 .slides .slide-6 .slide-box-cellijn-1 {
   width: 22%;
-  top: 32.3%;
+  top: 35.4%;
   left: 5%;
   line-height: 120%;
   font-size: 165%;
@@ -8776,7 +8776,7 @@ body sup.slider-header-small {
 .slides .slide-6 .slide-box-cellijn-2 {
   width: 24%;
   left: 50%;
-  top: 20%;
+  top: 26.5%;
   line-height: 120%;
   font-size: 165%;
   padding: 10px 10px 14px; }
@@ -8889,9 +8889,14 @@ body sup.slider-header-small {
   top: 22.9%;
   width: 73.1%; }
 
-.slides .slide-12-1 img.element-table-registratiestudie-info {
+.slides .slide-12-1 img.element-table-registratiestudie-info-1 {
   left: 78.9%;
   top: 34.7%;
+  width: 18.5%; }
+
+.slides .slide-12-1 img.element-table-registratiestudie-info-2 {
+  left: 78.9%;
+  top: 58%;
   width: 18.5%; }
 
 .slides .slide-12-1 .details-bottom {
@@ -9145,7 +9150,7 @@ body sup.slider-header-small {
   .slides .slide-20 .element-productinformatie p {
     margin-bottom: 20px;
     font-size: 1.3em;
-    line-height: 140em;
+    line-height: 1.4em;
     font-family: "sourcesanspro_regular", sans-serif; }
 
 .slides .slide-20 .element-vertical-mark {
@@ -9157,7 +9162,7 @@ body sup.slider-header-small {
       transform-origin: right top 0; }
   .slides .slide-20 .element-vertical-mark p {
     font-family: "sourcesanspro_regular", sans-serif;
-    font-size: 80%; }
+    font-size: 90%; }
 
 .source-sans-bold {
   font-family: "sourcesanspro_semibold", sans-serif !important; }
