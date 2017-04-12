@@ -8646,7 +8646,7 @@ body sup.slider-header-small {
       font-size: 4.1em;
       text-align: left;
       color: #9077b4;
-      line-height: 4.1em; }
+      line-height: 100%; }
     .slide-body .slide-header h3 {
       font-size: 3.1em;
       text-align: left;
@@ -9145,7 +9145,7 @@ body sup.slider-header-small {
   .slides .slide-20 .element-productinformatie p {
     margin-bottom: 20px;
     font-size: 1.3em;
-    line-height: 1.3em;
+    line-height: 140em;
     font-family: "sourcesanspro_regular", sans-serif; }
 
 .slides .slide-20 .element-vertical-mark {
