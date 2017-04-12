@@ -311,6 +311,7 @@ body sup.slider-header-small {
       bottom: 0;
       right: 7.8%;
       width: 24.4%;
+      z-index: 1050;
     }
   }
 
@@ -903,9 +904,9 @@ body sup.slider-header-small {
     .element-references {
       top: 10%;
       left: 12%;
-      font-size: 130%;
       width: 86%;
-      line-height: 125%;
+      font-size: 1.8em;
+      line-height: 1.75em;
     }
   }
 
@@ -919,8 +920,8 @@ body sup.slider-header-small {
 
       p {
         margin-bottom: 20px;
-        font-size: 105%;
-        line-height: 140%;
+        font-size: 1.8em;
+        line-height: 1.8em;
         font-family: "sourcesanspro_regular", sans-serif;
       }
     }

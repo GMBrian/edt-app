@@ -8707,7 +8707,8 @@ body sup.slider-header-small {
 .slides .slide-1 img.element-ios-app-hand {
   bottom: 0;
   right: 7.8%;
-  width: 24.4%; }
+  width: 24.4%;
+  z-index: 1050; }
 
 .slides .slide-2 img.element-1-dosing {
   width: 27.5%;
@@ -9132,9 +9133,9 @@ body sup.slider-header-small {
 .slides .slide-19 .element-references {
   top: 10%;
   left: 12%;
-  font-size: 130%;
   width: 86%;
-  line-height: 125%; }
+  font-size: 1.8em;
+  line-height: 1.75em; }
 
 .slides .slide-20 .element-productinformatie {
   left: 5%;
@@ -9143,8 +9144,8 @@ body sup.slider-header-small {
   text-align: justify; }
   .slides .slide-20 .element-productinformatie p {
     margin-bottom: 20px;
-    font-size: 105%;
-    line-height: 140%;
+    font-size: 1.8em;
+    line-height: 1.8em;
     font-family: "sourcesanspro_regular", sans-serif; }
 
 .slides .slide-20 .element-vertical-mark {
