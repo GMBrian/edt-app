@@ -426,6 +426,12 @@ body sup.slider-header-small {
       left: 5%;
       top: 29.7%;
     }
+
+    .uniek-dosisalgoritme-info {
+      top: 5%;
+      right: 2%;
+      width: 2.5%;
+    }
   }
 
   .slide-7-2 {
@@ -955,17 +961,18 @@ body sup.slider-header-small {
 }
 
 .tooltip-container {
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+  display: none;
   background-color: #fff;
   position: relative;
   z-index: 10000000;
-}
 
-#tooltipDosisalgoritme {
-  top: 50px;
-  left: 50px;
-  width: 200px;
-  height: 100px;
+  -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+
+  img {
+    max-width: 100%;
+  }
 
   .tooltip-close {
     position: absolute;
@@ -982,6 +989,10 @@ body sup.slider-header-small {
       width: 100%;
     }
   }
+}
+
+#tooltipDosisalgoritme {
+  width: 21%;
 }
 
 .source-sans-bold {

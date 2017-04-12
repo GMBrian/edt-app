@@ -8797,6 +8797,11 @@ body sup.slider-header-small {
   left: 5%;
   top: 29.7%; }
 
+.slides .slide-7-1 .uniek-dosisalgoritme-info {
+  top: 5%;
+  right: 2%;
+  width: 2.5%; }
+
 .slides .slide-7-2 .element-text-dosisalgoritme {
   text-align: left;
   line-height: 120%;
@@ -9164,26 +9169,26 @@ body sup.slider-header-small {
     font-size: 90%; }
 
 .tooltip-container {
-  box-shadow: 5px 5px 5px black;
+  display: none;
   background-color: #fff;
   position: relative;
-  z-index: 10000000; }
-
-#tooltipDosisalgoritme {
-  top: 50px;
-  left: 50px;
-  width: 200px;
-  height: 100px; }
-  #tooltipDosisalgoritme .tooltip-close {
+  z-index: 10000000;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); }
+  .tooltip-container img {
+    max-width: 100%; }
+  .tooltip-container .tooltip-close {
     position: absolute;
     display: inline-block;
     top: 8px;
     right: 8px;
     width: 40px;
     height: 40px; }
-    #tooltipDosisalgoritme .tooltip-close img {
+    .tooltip-container .tooltip-close img {
       position: relative;
       width: 100%; }
+
+#tooltipDosisalgoritme {
+  width: 21%; }
 
 .source-sans-bold {
   font-family: "sourcesanspro_semibold", sans-serif !important; }

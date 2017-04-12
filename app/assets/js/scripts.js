@@ -22,28 +22,30 @@
             progress: false
         });
 
-        var currentIndex = Reveal.getCurrentSlide().indexh;
+        Reveal.addEventListener('ready', function (event) {
 
-        if (currentIndex == 0) {
-            if ($('img.footer-logo-menu').attr('src') != 'assets/img/logo-ferring.png') {
+            //console.log(event.indexh);
+
+            if (event.indexh == 0) {
                 $('img.footer-logo-menu').fadeOut(200, function () {
                         $(this).attr('src', 'assets/img/logo-ferring.png');
                         $(this).addClass('footer-logo');
                     })
                     .fadeIn(200);
-
             }
-        }
-        else {
-            if ($('img.footer-logo-menu').attr('src') != 'assets/img/logo-rekovelle-footer.png') {
+            else {
                 $('img.footer-logo-menu').fadeOut(200, function () {
                         $(this).attr('src', 'assets/img/logo-rekovelle-footer.png');
                         $(this).removeClass('footer-logo');
+                        $(this).show();
                     })
                     .fadeIn(200);
             }
-        }
-        
+
+            //toggleFullScreen(document.body);
+        });
+
+
         Reveal.addEventListener('slidechanged', function (event) {
             // event.previousSlide, event.currentSlide, event.indexh, event.indexv
 
@@ -126,5 +128,53 @@
             //return false;
         });
     });
+
+    $('.element-icon-info').click(function () {
+        var tooltipId = $(this).data('toolt');
+
+        var offset = $(this).offset();
+
+        console.log(offset);
+        console.log($(this).position());
+
+        var targetTooltip = $('#' + tooltipId);
+
+        targetTooltip.find('.tooltip-close').css('max-width', $(this).width());
+
+        targetTooltip.css({top: offset.top - 8, right: ($(window).width() - offset.left - $(this).width() - 8), position: 'absolute'});
+        targetTooltip.show();
+
+        return false;
+    });
+
+    $('.tooltip-close').click(function () {
+        $(this).closest('.tooltip-container').hide();
+        return false;
+    });
+
+    function toggleFullScreen(elem) {
+        // ## The below if statement seems to work better ## if ((document.fullScreenElement && document.fullScreenElement !== null) || (document.msfullscreenElement && document.msfullscreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+        if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
+            if (elem.requestFullScreen) {
+                elem.requestFullScreen();
+            } else if (elem.mozRequestFullScreen) {
+                elem.mozRequestFullScreen();
+            } else if (elem.webkitRequestFullScreen) {
+                elem.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+            } else if (elem.msRequestFullscreen) {
+                elem.msRequestFullscreen();
+            }
+        } else {
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+        }
+    }
 
 })(jQuery, window, document);
