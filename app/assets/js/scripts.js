@@ -25,7 +25,27 @@
         Reveal.addEventListener('slidechanged', function (event) {
             // event.previousSlide, event.currentSlide, event.indexh, event.indexv
 
-            //console.log($(event.currentSlide).find('.animated'));
+            console.log($('img.footer-logo-menu').attr('src'));
+
+            if (event.indexh == 0) {
+                if ($('img.footer-logo-menu').attr('src') != 'assets/img/logo-ferring.png') {
+                    $('img.footer-logo-menu').fadeOut(200, function () {
+                            $(this).attr('src', 'assets/img/logo-ferring.png');
+                            $(this).addClass('footer-logo');
+                        })
+                        .fadeIn(200);
+
+                }
+            }
+            else {
+                if ($('img.footer-logo-menu').attr('src') != 'assets/img/logo-rekovelle-footer.png') {
+                    $('img.footer-logo-menu').fadeOut(200, function () {
+                            $(this).attr('src', 'assets/img/logo-rekovelle-footer.png');
+                            $(this).removeClass('footer-logo');
+                        })
+                        .fadeIn(200);
+                }
+            }
 
             $(event.currentSlide).find('.animated').each(function () {
 
@@ -67,20 +87,19 @@
         });
 
 
-        $('.footer-logo-menu-link').click(function(){
+        $('.footer-logo-menu-link').click(function () {
             $('#sidebar-menu').toggleClass('active');
             return false;
         });
 
 
-        $('.sidebar-menu-list a').click(function(){
+        $('.sidebar-menu-list a').click(function () {
             $('#sidebar-menu').removeClass('active');
             //return false;
         });
 
 
-
-        $('#sidebar-menu').click(function(){
+        $('#sidebar-menu').click(function () {
             $('#sidebar-menu').removeClass('active');
             //return false;
         });

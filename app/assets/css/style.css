@@ -8643,17 +8643,17 @@ body sup.slider-header-small {
       font-family: 'terminal_dosissemibold', sans-serif;
       padding: 0 0 1%; }
     .slide-body .slide-header h2 {
-      font-size: 300%;
+      font-size: 4em;
       text-align: left;
       color: #9077b4;
       line-height: 100%; }
     .slide-body .slide-header h3 {
-      font-size: 240%;
+      font-size: 3.1em;
       text-align: left;
       color: #ec672f;
       line-height: 100%; }
     .slide-body .slide-header h4 {
-      font-size: 200%;
+      font-size: 2em;
       text-align: left;
       color: #000000;
       line-height: 100%; }
