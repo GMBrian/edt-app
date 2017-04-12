@@ -166,8 +166,11 @@ body sup.slider-header-small {
   &.slide-body-sub {
     @include gradient-vertical(#d0c4f4, #ffffff, 0%, 65%);
 
-    h3 {
-      color: #9077b4;
+    .slide-header {
+
+      h3 {
+        color: #9077b4;
+      }
     }
   }
 
@@ -270,7 +273,7 @@ body sup.slider-header-small {
   }
 
   .element-list {
-    font-size: 1.8em;
+    font-size: 2.1em;
     line-height: 120%;
     font-family: "sourcesanspro_regular", sans-serif;
     text-align: left;
@@ -587,15 +590,15 @@ body sup.slider-header-small {
 
     .element-studie-opzet-list {
       left: 11%;
-      top: 22.9%;
+      top: 21.9%;
       width: 61%;
 
       p {
         font-family: "sourcesanspro_semibold", sans-serif;
         text-align: left;
-        margin: 0;
-        font-size: 160%;
-        line-height: 120%;
+        margin: 10px 0 0;
+        font-size: 2.05em;
+        line-height: 140%;
       }
 
       .element-list {
