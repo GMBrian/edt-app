@@ -8799,7 +8799,7 @@ body sup.slider-header-small {
 
 .slides .slide-7-1 .uniek-dosisalgoritme-info {
   top: 5%;
-  right: 2%;
+  right: 3.5%;
   width: 2.5%; }
 
 .slides .slide-7-2 .element-text-dosisalgoritme {
@@ -9186,6 +9186,12 @@ body sup.slider-header-small {
     .tooltip-container .tooltip-close img {
       position: relative;
       width: 100%; }
+
+#tooltipDosisalgoritme {
+  width: 21%; }
+
+#tooltipDosisalgoritme {
+  width: 21%; }
 
 #tooltipDosisalgoritme {
   width: 21%; }

@@ -99,6 +99,15 @@
 
         });
 
+        Reveal.addEventListener( 'slidechanged', function( event ) {
+            // event.previousSlide, event.currentSlide, event.indexh, event.indexv
+
+            $('.tooltip-container').each(function() {
+                $(this).fadeOut();
+            });
+        } );
+
+
         Reveal.addEventListener('fragmentshown', function (event) {
             // event.fragment = the fragment DOM element
 
