@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/index.html" line="262" />
+    <bookmark url="file://$PROJECT_DIR$/app/index.html" line="261" />
     <bookmark url="file://$PROJECT_DIR$/src/scss/partials/_main.scss" line="110" />
   </component>
   <component name="ChangeListManager">
@@ -33,21 +33,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="_main.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/scss/partials/_main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="530" column="13" selection-start-line="530" selection-start-column="13" selection-end-line="530" selection-end-column="13" />
+            <state relative-caret-position="280">
+              <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="203" column="77" selection-start-line="0" selection-start-column="0" selection-end-line="1076" selection-end-column="0" />
+            <state relative-caret-position="230">
+              <caret line="205" column="113" selection-start-line="205" selection-start-column="113" selection-end-line="205" selection-end-column="113" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#a#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -109,8 +109,8 @@
         <option value="$PROJECT_DIR$/src/scss/partials/_footer.scss" />
         <option value="$PROJECT_DIR$/src/scss/partials/_sidebar.scss" />
         <option value="$PROJECT_DIR$/src/js/scripts.js" />
-        <option value="$PROJECT_DIR$/src/scss/partials/_main.scss" />
         <option value="$PROJECT_DIR$/app/index.html" />
+        <option value="$PROJECT_DIR$/src/scss/partials/_main.scss" />
       </list>
     </option>
   </component>
@@ -477,12 +477,12 @@
       <workItem from="1491314183580" duration="70451000" />
       <workItem from="1491657623370" duration="2925000" />
       <workItem from="1491893737893" duration="644000" />
-      <workItem from="1491982954971" duration="28741000" />
+      <workItem from="1491982954971" duration="29586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142530000" />
+    <option name="totallyTimeSpent" value="143375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
@@ -857,21 +857,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/scss/partials/_main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="530" column="13" selection-start-line="530" selection-start-column="13" selection-end-line="530" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="203" column="77" selection-start-line="0" selection-start-column="0" selection-end-line="1076" selection-end-column="0" />
+        <state relative-caret-position="230">
+          <caret line="205" column="113" selection-start-line="205" selection-start-column="113" selection-end-line="205" selection-end-column="113" />
           <folding>
             <element signature="n#style#0;n#img#0;n#a#0;n#footer#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scss/partials/_main.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="161" column="9" selection-start-line="161" selection-start-column="9" selection-end-line="161" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
