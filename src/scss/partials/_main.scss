@@ -165,6 +165,10 @@ body sup.slider-header-small {
 
   &.slide-body-sub {
     @include gradient-vertical(#d0c4f4, #ffffff, 0%, 65%);
+
+    h3 {
+      color: #9077b4;
+    }
   }
 
   .slide-element {
@@ -266,7 +270,7 @@ body sup.slider-header-small {
   }
 
   .element-list {
-    font-size: 160%;
+    font-size: 1.8em;
     line-height: 120%;
     font-family: "sourcesanspro_regular", sans-serif;
     text-align: left;

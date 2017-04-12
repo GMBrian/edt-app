@@ -8605,6 +8605,8 @@ body sup.slider-header-small {
     background-image: linear-gradient(to bottom, #d0c4f4 0%, #ffffff 65%);
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD0C4F4', endColorstr='#FFFFFFFF', GradientType=0); }
+    .slide-body.slide-body-sub h3 {
+      color: #9077b4; }
   .slide-body .slide-element {
     position: absolute; }
   .slide-body .slide-element-front {
@@ -8675,7 +8677,7 @@ body sup.slider-header-small {
   .slide-body .section-box .element-list {
     padding: 10px 20px 20px 40px; }
   .slide-body .element-list {
-    font-size: 160%;
+    font-size: 1.8em;
     line-height: 120%;
     font-family: "sourcesanspro_regular", sans-serif;
     text-align: left;
