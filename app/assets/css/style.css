@@ -8602,9 +8602,9 @@ body sup.slider-header-small {
   height: 100%;
   width: 100%; }
   .slide-body.slide-body-sub {
-    background-image: linear-gradient(to bottom, #8677b6 0%, #ffffff 65%);
+    background-image: linear-gradient(to bottom, #d0c4f4 0%, #ffffff 65%);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8677B6', endColorstr='#FFFFFFFF', GradientType=0); }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD0C4F4', endColorstr='#FFFFFFFF', GradientType=0); }
   .slide-body .slide-element {
     position: absolute; }
   .slide-body .slide-element-front {
@@ -8643,10 +8643,10 @@ body sup.slider-header-small {
       font-family: 'terminal_dosissemibold', sans-serif;
       padding: 0 0 1%; }
     .slide-body .slide-header h2 {
-      font-size: 4em;
+      font-size: 4.1em;
       text-align: left;
       color: #9077b4;
-      line-height: 100%; }
+      line-height: 4.1em; }
     .slide-body .slide-header h3 {
       font-size: 3.1em;
       text-align: left;
@@ -9134,8 +9134,8 @@ body sup.slider-header-small {
   top: 10%;
   left: 12%;
   width: 86%;
-  font-size: 1.8em;
-  line-height: 1.75em; }
+  font-size: 1.4em;
+  line-height: 1.35em; }
 
 .slides .slide-20 .element-productinformatie {
   left: 5%;
@@ -9144,8 +9144,8 @@ body sup.slider-header-small {
   text-align: justify; }
   .slides .slide-20 .element-productinformatie p {
     margin-bottom: 20px;
-    font-size: 1.8em;
-    line-height: 1.8em;
+    font-size: 1.3em;
+    line-height: 1.3em;
     font-family: "sourcesanspro_regular", sans-serif; }
 
 .slides .slide-20 .element-vertical-mark {

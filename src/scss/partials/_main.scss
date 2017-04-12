@@ -164,7 +164,7 @@ body sup.slider-header-small {
   width: 100%;
 
   &.slide-body-sub {
-    @include gradient-vertical(#8677b6, #ffffff, 0%, 65%);
+    @include gradient-vertical(#d0c4f4, #ffffff, 0%, 65%);
   }
 
   .slide-element {
@@ -219,10 +219,10 @@ body sup.slider-header-small {
     }
 
     h2 {
-      font-size: 4em;
+      font-size: 4.1em;
       text-align: left;
       color: #9077b4;
-      line-height: 100%;
+      line-height: 4.1em;
     }
 
     h3 {
@@ -905,8 +905,8 @@ body sup.slider-header-small {
       top: 10%;
       left: 12%;
       width: 86%;
-      font-size: 1.8em;
-      line-height: 1.75em;
+      font-size: 1.4em;
+      line-height: 1.35em;
     }
   }
 
@@ -920,8 +920,8 @@ body sup.slider-header-small {
 
       p {
         margin-bottom: 20px;
-        font-size: 1.8em;
-        line-height: 1.8em;
+        font-size: 1.3em;
+        line-height: 1.3em;
         font-family: "sourcesanspro_regular", sans-serif;
       }
     }
