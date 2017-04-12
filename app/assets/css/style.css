@@ -8482,9 +8482,9 @@ body .sidebar-menu-container {
       body .sidebar-menu-container .sidebar-menu-list li a {
         font-family: 'terminal_dosisregular', sans-serif;
         display: block;
-        font-size: 140%;
+        font-size: 2em;
         padding: 5px 0;
-        line-height: 160%;
+        line-height: 2.2em;
         color: #ffffff; }
         body .sidebar-menu-container .sidebar-menu-list li a:hover, body .sidebar-menu-container .sidebar-menu-list li a:active {
           text-decoration: none; }
@@ -8681,12 +8681,12 @@ body sup.slider-header-small {
     text-align: left;
     padding: 20px; }
   .slide-body .details-bottom {
-    width: 65.3%;
+    width: 60%;
     left: 17.35%;
     bottom: 12%;
     font-family: "sourcesanspro_regular", sans-serif;
-    font-size: 90%;
-    line-height: 120%;
+    font-size: 1.2em;
+    line-height: 1.3em;
     text-align: left; }
   .slide-body .element-icon-info {
     width: 2.5%; }
