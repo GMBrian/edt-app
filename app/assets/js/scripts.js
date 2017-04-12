@@ -49,7 +49,7 @@
         Reveal.addEventListener('slidechanged', function (event) {
             // event.previousSlide, event.currentSlide, event.indexh, event.indexv
 
-            console.log($('img.footer-logo-menu').attr('src'));
+            //console.log($('img.footer-logo-menu').attr('src'));
 
             if (event.indexh == 0) {
                 if ($('img.footer-logo-menu').attr('src') != 'assets/img/logo-ferring.png') {
@@ -111,12 +111,12 @@
         Reveal.addEventListener('fragmentshown', function (event) {
             // event.fragment = the fragment DOM element
 
-            console.log('fragmentshown: ' + event.indexh);
+            //console.log('fragmentshown: ' + event.indexh);
         });
         Reveal.addEventListener('fragmenthidden', function (event) {
             // event.fragment = the fragment DOM element
 
-            console.log('fragmenthidden: ' + event.indexh);
+            //console.log('fragmenthidden: ' + event.indexh);
         });
 
 
@@ -143,8 +143,8 @@
 
         var offset = $(this).offset();
 
-        console.log(offset);
-        console.log($(this).position());
+        //console.log(offset);
+        //console.log($(this).position());
 
         var targetTooltip = $('#' + tooltipId);
 

@@ -158,6 +158,10 @@ body sup.slider-header-small {
   top: -0.7em;
 }
 
+span.text-color {
+  color: #000000 !important;
+}
+
 .slide-body {
   position: relative;
   height: 100%;
@@ -270,6 +274,10 @@ body sup.slider-header-small {
 
   .section-box .element-list {
     padding: 10px 20px 20px 40px;
+
+    li {
+      margin-bottom: 25px;
+    }
   }
 
   .element-list {
@@ -518,9 +526,9 @@ body sup.slider-header-small {
     }
 
     .element-dosering-details {
-      font-size: 110%;
+      font-size: 1.4em;
       line-height: 140%;
-      top: 57%;
+      top: 59%;
       left: 22.2%;
       width: 30.3%;
       text-align: right;
@@ -735,7 +743,10 @@ body sup.slider-header-small {
         padding-left: 30px;
         margin-bottom: 15px;
 
-        li {
+        list-style-type: disc;
+
+        > li {
+          color: #9077b4;
         }
       }
     }
@@ -906,7 +917,7 @@ body sup.slider-header-small {
       p {
         text-align: left;
         font-family: "sourcesanspro_regular", sans-serif;
-        font-size: 140%;
+        font-size: 2em;
 
       }
     }

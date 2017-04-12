@@ -8597,6 +8597,9 @@ body sup.slider-header-small {
   line-height: 100%;
   top: -0.7em; }
 
+span.text-color {
+  color: #000000 !important; }
+
 .slide-body {
   position: relative;
   height: 100%;
@@ -8676,6 +8679,8 @@ body sup.slider-header-small {
       border-top-right-radius: 20px; }
   .slide-body .section-box .element-list {
     padding: 10px 20px 20px 40px; }
+    .slide-body .section-box .element-list li {
+      margin-bottom: 25px; }
   .slide-body .element-list {
     font-size: 2.1em;
     line-height: 120%;
@@ -8859,9 +8864,9 @@ body sup.slider-header-small {
   width: 17.1%; }
 
 .slides .slide-8 .element-dosering-details {
-  font-size: 110%;
+  font-size: 1.4em;
   line-height: 140%;
-  top: 57%;
+  top: 59%;
   left: 22.2%;
   width: 30.3%;
   text-align: right; }
@@ -9009,7 +9014,10 @@ body sup.slider-header-small {
   width: 72.5%; }
   .slides .slide-15-2 .element-immunoassay-list > li > ul {
     padding-left: 30px;
-    margin-bottom: 15px; }
+    margin-bottom: 15px;
+    list-style-type: disc; }
+    .slides .slide-15-2 .element-immunoassay-list > li > ul > li {
+      color: #9077b4; }
 
 .slides .slide-15-3 img.element-table-antagonist {
   left: 5%;
@@ -9132,7 +9140,7 @@ body sup.slider-header-small {
   .slides .slide-18 .element-delta p {
     text-align: left;
     font-family: "sourcesanspro_regular", sans-serif;
-    font-size: 140%; }
+    font-size: 2em; }
 
 .slides .slide-18 .details-bottom {
   left: 60%;
