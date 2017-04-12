@@ -226,7 +226,7 @@ body sup.slider-header-small {
     }
 
     h2 {
-      font-size: 4.1em;
+      font-size: 4.2em;
       text-align: left;
       color: #9077b4;
       line-height: 100%;
@@ -779,13 +779,13 @@ body sup.slider-header-small {
         font-family: "sourcesanspro_semibold", sans-serif;
         text-align: left;
         margin: 0;
-        font-size: 220%;
+        font-size: 3em;
         line-height: 120%;
       }
 
       .element-list {
         padding: 0 0 10px 80px;
-        font-size: 160%;
+        font-size: 2em;
         line-height: 130%;
       }
     }
@@ -804,7 +804,7 @@ body sup.slider-header-small {
     }
     img.googleplay {
       width: 30%;
-      margin: 2% 4%;
+      margin: 0;
     }
 
     .element-app-hand {
@@ -950,6 +950,36 @@ body sup.slider-header-small {
         font-family: "sourcesanspro_regular", sans-serif;
         font-size: 90%;
       }
+    }
+  }
+}
+
+.tooltip-container {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 1);
+  background-color: #fff;
+  position: relative;
+  z-index: 10000000;
+}
+
+#tooltipDosisalgoritme {
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 100px;
+
+  .tooltip-close {
+    position: absolute;
+    display: inline-block;
+
+    top: 8px;
+    right: 8px;
+
+    width: 40px;
+    height: 40px;
+
+    img {
+      position: relative;
+      width: 100%;
     }
   }
 }

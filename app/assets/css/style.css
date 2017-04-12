@@ -8645,7 +8645,7 @@ body sup.slider-header-small {
       font-family: 'terminal_dosissemibold', sans-serif;
       padding: 0 0 1%; }
     .slide-body .slide-header h2 {
-      font-size: 4.1em;
+      font-size: 4.2em;
       text-align: left;
       color: #9077b4;
       line-height: 100%; }
@@ -9034,11 +9034,11 @@ body sup.slider-header-small {
     font-family: "sourcesanspro_semibold", sans-serif;
     text-align: left;
     margin: 0;
-    font-size: 220%;
+    font-size: 3em;
     line-height: 120%; }
   .slides .slide-16 .element-ondersteuning-list .element-list {
     padding: 0 0 10px 80px;
-    font-size: 160%;
+    font-size: 2em;
     line-height: 130%; }
 
 .slides .slide-17 .element-app-list {
@@ -9052,7 +9052,7 @@ body sup.slider-header-small {
 
 .slides .slide-17 img.googleplay {
   width: 30%;
-  margin: 2% 4%; }
+  margin: 0; }
 
 .slides .slide-17 .element-app-hand {
   left: 50%;
@@ -9162,6 +9162,28 @@ body sup.slider-header-small {
   .slides .slide-20 .element-vertical-mark p {
     font-family: "sourcesanspro_regular", sans-serif;
     font-size: 90%; }
+
+.tooltip-container {
+  box-shadow: 5px 5px 5px black;
+  background-color: #fff;
+  position: relative;
+  z-index: 10000000; }
+
+#tooltipDosisalgoritme {
+  top: 50px;
+  left: 50px;
+  width: 200px;
+  height: 100px; }
+  #tooltipDosisalgoritme .tooltip-close {
+    position: absolute;
+    display: inline-block;
+    top: 8px;
+    right: 8px;
+    width: 40px;
+    height: 40px; }
+    #tooltipDosisalgoritme .tooltip-close img {
+      position: relative;
+      width: 100%; }
 
 .source-sans-bold {
   font-family: "sourcesanspro_semibold", sans-serif !important; }
