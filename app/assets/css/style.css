@@ -8461,10 +8461,10 @@ th {
   z-index: 1040; }
 
 body .sidebar-menu-container {
-  width: 33.3%;
+  width: 40%;
   position: absolute;
   top: 0;
-  right: -33.3%;
+  right: -40%;
   bottom: 0;
   z-index: 100;
   padding: 4% 4.5%;
@@ -8769,19 +8769,19 @@ body sup.slider-header-small {
 
 .slides .slide-6 .slide-box-cellijn-1 {
   width: 22%;
-  top: 35.4%;
+  top: 33.4%;
   left: 5%;
   line-height: 120%;
-  font-size: 165%;
-  padding: 10px 10px 14px; }
+  font-size: 2.2em;
+  padding: 15px 15px 19px; }
 
 .slides .slide-6 .slide-box-cellijn-2 {
   width: 24%;
   left: 50%;
-  top: 26.5%;
+  top: 20.5%;
   line-height: 120%;
-  font-size: 165%;
-  padding: 10px 10px 14px; }
+  font-size: 2.2em;
+  padding: 15px 15px 19px; }
 
 .slides .slide-6 .list-cellijn {
   font-size: 160%;
