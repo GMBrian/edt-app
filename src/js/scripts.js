@@ -14,6 +14,28 @@
             progress: false
         });
 
+        var currentIndex = Reveal.getCurrentSlide().indexh;
+
+        if (currentIndex == 0) {
+            if ($('img.footer-logo-menu').attr('src') != 'assets/img/logo-ferring.png') {
+                $('img.footer-logo-menu').fadeOut(200, function () {
+                        $(this).attr('src', 'assets/img/logo-ferring.png');
+                        $(this).addClass('footer-logo');
+                    })
+                    .fadeIn(200);
+
+            }
+        }
+        else {
+            if ($('img.footer-logo-menu').attr('src') != 'assets/img/logo-rekovelle-footer.png') {
+                $('img.footer-logo-menu').fadeOut(200, function () {
+                        $(this).attr('src', 'assets/img/logo-rekovelle-footer.png');
+                        $(this).removeClass('footer-logo');
+                    })
+                    .fadeIn(200);
+            }
+        }
+        
         Reveal.addEventListener('slidechanged', function (event) {
             // event.previousSlide, event.currentSlide, event.indexh, event.indexv
 
