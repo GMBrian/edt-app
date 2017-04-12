@@ -9048,11 +9048,11 @@ body sup.slider-header-small {
 
 .slides .slide-17 img.appstore {
   width: 30%;
-  margin: 0 4%; }
+  margin: 2% 4% 0 -5%; }
 
 .slides .slide-17 img.googleplay {
   width: 30%;
-  margin: 0 4%; }
+  margin: 2% 4%; }
 
 .slides .slide-17 .element-app-hand {
   left: 50%;
@@ -9070,9 +9070,7 @@ body sup.slider-header-small {
     font-size: 220%;
     line-height: 120%; }
   .slides .slide-17 .element-app-list .element-list {
-    padding: 0 0 10px 80px;
-    font-size: 160%;
-    line-height: 130%; }
+    padding: 0 0 10px 80px; }
 
 .slides .slide-18 img.element-uniek-vrouwen {
   bottom: 0;
@@ -9125,8 +9123,7 @@ body sup.slider-header-small {
     font-size: 2.6em;
     font-family: "terminal_dosissemibold", sans-serif; }
   .slides .slide-18 .element-delta .element-list {
-    padding: 10px 20px;
-    font-size: 155%; }
+    padding: 10px 20px; }
   .slides .slide-18 .element-delta p {
     text-align: left;
     font-family: "sourcesanspro_regular", sans-serif;
