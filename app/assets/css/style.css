@@ -8602,9 +8602,9 @@ body sup.slider-header-small {
   height: 100%;
   width: 100%; }
   .slide-body.slide-body-sub {
-    background-image: linear-gradient(to bottom, #d0c4f4 0%, #ffffff 65%);
+    background-image: linear-gradient(to bottom, #e2daf7 0%, #ffffff 65%);
     background-repeat: repeat-x;
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD0C4F4', endColorstr='#FFFFFFFF', GradientType=0); }
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE2DAF7', endColorstr='#FFFFFFFF', GradientType=0); }
     .slide-body.slide-body-sub .slide-header h3 {
       color: #9077b4; }
   .slide-body .slide-element {
@@ -8994,9 +8994,9 @@ body sup.slider-header-small {
   width: 71.8%; }
 
 .slides .slide-15-2 img.element-immunoasay {
-  left: 56.3%;
-  top: 42.9%;
-  width: 33.2%; }
+  left: 52.3%;
+  top: 34.9%;
+  width: 40.2%; }
 
 .slides .slide-15-2 .element-immunoassay-list {
   top: 28%;
@@ -9141,8 +9141,8 @@ body sup.slider-header-small {
   top: 10%;
   left: 12%;
   width: 86%;
-  font-size: 1.4em;
-  line-height: 1.35em; }
+  font-size: 1.5em;
+  line-height: 110%; }
 
 .slides .slide-20 .element-productinformatie {
   left: 5%;
