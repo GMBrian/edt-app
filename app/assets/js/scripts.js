@@ -15,8 +15,8 @@
 
         // More info https://github.com/hakimel/reveal.js#configuration
         Reveal.initialize({
-            width: "100%",
-            height: "100%",
+            width: '100%',
+            height: '100%',
             margin: 0,
             controls: false,
             progress: false
@@ -27,7 +27,7 @@
 
             //console.log($(event.currentSlide).find('.animated'));
 
-            $(event.currentSlide).find('.animated').each(function (e) {
+            $(event.currentSlide).find('.animated').each(function () {
 
                 var elm = this;
                 var newone = elm.cloneNode(true);
@@ -42,9 +42,9 @@
                 // }, 1000);
 
 
-                // e.classList.remove("animated");
+                // e.classList.remove('animated');
                 //
-                // e.classList.add("animated");
+                // e.classList.add('animated');
 
                 //e.removeClass('.animated').addClass('animated bounceOutLeft');
             });
@@ -67,17 +67,23 @@
         });
 
 
-        $(".footer-logo-menu-link").click(function(){
-            $("#sidebar-menu").toggleClass("active");
+        $('.footer-logo-menu-link').click(function(){
+            $('#sidebar-menu').toggleClass('active');
             return false;
         });
 
 
-        $(".sidebar-menu-list a").click(function(){
-            $("#sidebar-menu").removeClass("active");
+        $('.sidebar-menu-list a').click(function(){
+            $('#sidebar-menu').removeClass('active');
             //return false;
         });
 
+
+
+        $('#sidebar-menu').click(function(){
+            $('#sidebar-menu').removeClass('active');
+            //return false;
+        });
     });
 
 })(jQuery, window, document);
