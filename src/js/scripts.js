@@ -24,6 +24,8 @@
                         $(this).addClass('footer-logo');
                     })
                     .fadeIn(200);
+
+                //$('img.element-ios-app-hand').fadeIn();
             }
             else {
                 $('img.footer-logo-menu').fadeOut(200, function () {
@@ -32,6 +34,7 @@
                         $(this).show();
                     })
                     .fadeIn(200);
+                //$('img.element-ios-app-hand').hide();
             }
 
             //toggleFullScreen(document.body);
@@ -52,6 +55,8 @@
                         .fadeIn(200);
 
                 }
+
+                //$('img.element-ios-app-hand').fadeIn();
             }
             else {
                 if ($('img.footer-logo-menu').attr('src') != 'assets/img/logo-rekovelle-footer.png') {
@@ -61,6 +66,7 @@
                         })
                         .fadeIn(200);
                 }
+                //$('img.element-ios-app-hand').fadeOut();
             }
 
             $(event.currentSlide).find('.animated').each(function () {
