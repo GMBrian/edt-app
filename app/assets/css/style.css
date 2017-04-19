@@ -9249,6 +9249,15 @@ a.footer-smpc {
     position: relative;
     width: 100%; }
 
+a.footer-fullscreen {
+  position: absolute;
+  width: 3.75%;
+  bottom: 5.8%;
+  left: 9.1%; }
+  a.footer-fullscreen img {
+    position: relative;
+    width: 100%; }
+
 img.footer-background {
   float: left;
   width: 100%; }

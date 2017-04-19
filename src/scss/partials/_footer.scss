@@ -2,8 +2,6 @@
   //position: relative;
   //z-index: 100
 
-
-
 }
 
 img.element-ios-app-hand {
@@ -45,6 +43,18 @@ a.footer-smpc {
   width: 6%;
   bottom: 5.8%;
   left: 2.1%;
+
+  img {
+    position: relative;
+    width: 100%;
+  }
+}
+
+a.footer-fullscreen {
+  position: absolute;
+  width: 3.75%;
+  bottom: 5.8%;
+  left: 9.1%;
 
   img {
     position: relative;

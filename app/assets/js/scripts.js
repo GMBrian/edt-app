@@ -19,7 +19,11 @@
             height: '100%',
             margin: 0,
             controls: false,
-            progress: false
+            progress: false,
+            keyboard: {
+                27: null, // do something custom when ESC is pressed
+                32: function() {Reveal.toggleOverview();} // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
+            }
         });
 
         Reveal.addEventListener('ready', function (event) {
@@ -166,6 +170,66 @@
         $(this).closest('.tooltip-container').hide();
         return false;
     });
+
+
+    var inFullScreen = false; // flag to show when full screen
+
+    var fsClass = document.getElementsByClassName("goFullScreen");
+    for (var i = 0; i < fsClass.length; i++) {
+        fsClass[i].addEventListener("click", function (evt) {
+            if (inFullScreen == false) {
+                makeFullScreen(document.body); // open to full screen
+            } else {
+                reset();
+            }
+        }, false);
+    }
+
+
+    function makeFullScreen(divObj) {
+        if (divObj.requestFullscreen) {
+            divObj.requestFullscreen();
+        }
+        else if (divObj.msRequestFullscreen) {
+            divObj.msRequestFullscreen();
+        }
+        else if (divObj.mozRequestFullScreen) {
+            divObj.mozRequestFullScreen();
+        }
+        else if (divObj.webkitRequestFullscreen) {
+            divObj.webkitRequestFullscreen();
+        }
+        inFullScreen = true;
+
+        setTimeout(function() {
+            Reveal.sync();
+        }, 1500);
+
+        return;
+    }
+
+    function reset() {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+        else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+        else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        }
+        else if (document.webkitCancelFullScreen) {
+            document.webkitCancelFullScreen();
+        }
+        inFullScreen = false;
+
+        setTimeout(function() {
+            Reveal.sync();
+        }, 1500);
+
+        return;
+    }
+
 
     // function toggleFullScreen(elem) {
     //     // ## The below if statement seems to work better ## if ((document.fullScreenElement && document.fullScreenElement !== null) || (document.msfullscreenElement && document.msfullscreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
