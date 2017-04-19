@@ -33,7 +33,7 @@
                     })
                     .fadeIn(200);
 
-                $('img.element-ios-app-hand').fadeIn();
+                //$('img.element-ios-app-hand').fadeIn();
             }
             else {
                 $('img.footer-logo-menu').fadeOut(200, function () {
@@ -42,7 +42,7 @@
                         $(this).show();
                     })
                     .fadeIn(200);
-                $('img.element-ios-app-hand').hide();
+                //$('img.element-ios-app-hand').hide();
             }
 
             //toggleFullScreen(document.body);
@@ -64,7 +64,7 @@
 
                 }
 
-                $('img.element-ios-app-hand').fadeIn();
+                //$('img.element-ios-app-hand').fadeIn();
             }
             else {
                 if ($('img.footer-logo-menu').attr('src') != 'assets/img/logo-rekovelle-footer.png') {
@@ -74,7 +74,7 @@
                         })
                         .fadeIn(200);
                 }
-                $('img.element-ios-app-hand').fadeOut();
+                //$('img.element-ios-app-hand').fadeOut();
             }
 
             $(event.currentSlide).find('.animated').each(function () {
@@ -167,29 +167,29 @@
         return false;
     });
 
-    function toggleFullScreen(elem) {
-        // ## The below if statement seems to work better ## if ((document.fullScreenElement && document.fullScreenElement !== null) || (document.msfullscreenElement && document.msfullscreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
-        if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
-            if (elem.requestFullScreen) {
-                elem.requestFullScreen();
-            } else if (elem.mozRequestFullScreen) {
-                elem.mozRequestFullScreen();
-            } else if (elem.webkitRequestFullScreen) {
-                elem.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
-            } else if (elem.msRequestFullscreen) {
-                elem.msRequestFullscreen();
-            }
-        } else {
-            if (document.cancelFullScreen) {
-                document.cancelFullScreen();
-            } else if (document.mozCancelFullScreen) {
-                document.mozCancelFullScreen();
-            } else if (document.webkitCancelFullScreen) {
-                document.webkitCancelFullScreen();
-            } else if (document.msExitFullscreen) {
-                document.msExitFullscreen();
-            }
-        }
-    }
+    // function toggleFullScreen(elem) {
+    //     // ## The below if statement seems to work better ## if ((document.fullScreenElement && document.fullScreenElement !== null) || (document.msfullscreenElement && document.msfullscreenElement !== null) || (!document.mozFullScreen && !document.webkitIsFullScreen)) {
+    //     if ((document.fullScreenElement !== undefined && document.fullScreenElement === null) || (document.msFullscreenElement !== undefined && document.msFullscreenElement === null) || (document.mozFullScreen !== undefined && !document.mozFullScreen) || (document.webkitIsFullScreen !== undefined && !document.webkitIsFullScreen)) {
+    //         if (elem.requestFullScreen) {
+    //             elem.requestFullScreen();
+    //         } else if (elem.mozRequestFullScreen) {
+    //             elem.mozRequestFullScreen();
+    //         } else if (elem.webkitRequestFullScreen) {
+    //             elem.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+    //         } else if (elem.msRequestFullscreen) {
+    //             elem.msRequestFullscreen();
+    //         }
+    //     } else {
+    //         if (document.cancelFullScreen) {
+    //             document.cancelFullScreen();
+    //         } else if (document.mozCancelFullScreen) {
+    //             document.mozCancelFullScreen();
+    //         } else if (document.webkitCancelFullScreen) {
+    //             document.webkitCancelFullScreen();
+    //         } else if (document.msExitFullscreen) {
+    //             document.msExitFullscreen();
+    //         }
+    //     }
+    // }
 
 })(jQuery, window, document);
