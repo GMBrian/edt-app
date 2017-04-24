@@ -977,6 +977,29 @@ span.text-color {
   }
 }
 
+.modal-dialog {
+  width: 90%;
+  height: 90%;
+
+  .modal-content {
+    height: auto;
+    min-height: 90%;
+    border-radius: 0;
+  }
+
+  .iframe-container {
+    iframe {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 90%;
+  }
+}
+
 .tooltip-container {
   display: none;
   background-color: #fff;

@@ -6,6 +6,38 @@
  * @version 1.0.5
  * Copyright 2017. MIT licensed.
  */
+(function (a) {
+    a.createModal = function (b) {
+        defaults = {title: "", message: "Your Message Goes Here!", closeButton: true, scrollable: false};
+        var b = a.extend({}, defaults, b);
+        var c = (b.scrollable === true) ? 'style="max-height: 420px;overflow-y: auto;"' : "";
+        html = '<div class="modal fade" id="myModal">';
+        html += '<div class="modal-dialog">';
+        html += '<div class="modal-content">';
+        html += '<div class="modal-header">';
+        html += '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>';
+        if (b.title.length > 0) {
+            html += '<h4 class="modal-title">' + b.title + "</h4>"
+        }
+        html += "</div>";
+        html += '<div class="modal-body" ' + c + ">";
+        html += b.message;
+        html += "</div>";
+        html += '<div class="modal-footer">';
+        if (b.closeButton === true) {
+            html += '<button type="button" class="btn btn-primary" data-dismiss="modal">Sluit</button>'
+        }
+        html += "</div>";
+        html += "</div>";
+        html += "</div>";
+        html += "</div>";
+        a("body").prepend(html);
+        a("#myModal").modal().on("hidden.bs.modal", function () {
+            a(this).remove()
+        })
+    }
+})(jQuery);
+
 (function ($, window, document, undefined) {
 
     'use strict';
@@ -22,7 +54,9 @@
             progress: false,
             keyboard: {
                 27: null, // do something custom when ESC is pressed
-                32: function() {Reveal.toggleOverview();} // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
+                32: function () {
+                    Reveal.toggleOverview();
+                } // don't do anything when SPACE is pressed (i.e. disable a reveal.js default binding)
             }
         });
 
@@ -109,13 +143,13 @@
 
         });
 
-        Reveal.addEventListener( 'slidechanged', function( event ) {
+        Reveal.addEventListener('slidechanged', function (event) {
             // event.previousSlide, event.currentSlide, event.indexh, event.indexv
 
-            $('.tooltip-container').each(function() {
+            $('.tooltip-container').each(function () {
                 $(this).fadeOut();
             });
-        } );
+        });
 
 
         Reveal.addEventListener('fragmentshown', function (event) {
@@ -160,7 +194,11 @@
 
         targetTooltip.find('.tooltip-close').css('max-width', $(this).width());
 
-        targetTooltip.css({top: offset.top - 8, right: ($(window).width() - offset.left - $(this).width() - 8), position: 'absolute'});
+        targetTooltip.css({
+            top: offset.top - 8,
+            right: ($(window).width() - offset.left - $(this).width() - 8),
+            position: 'absolute'
+        });
         targetTooltip.show();
 
         return false;
@@ -169,6 +207,28 @@
     $('.tooltip-close').click(function () {
         $(this).closest('.tooltip-container').hide();
         return false;
+    });
+
+
+    $('.goSmpc').click(function () {
+        var pdf_link = $(this).attr('href');
+        var iframe = '<div class="iframe-container"><iframe src="' + pdf_link + '"></iframe></div>'
+        $.createModal({
+            title: 'SmPC',
+            message: iframe,
+            closeButton: true,
+            scrollable: false
+        });
+
+        $('.iframe-container').height($(window).height() - 230);
+        $('.iframe-container iframe').height($(window).height() - 230);
+
+        return false;
+    });
+
+
+    $('.goHome').click(function () {
+        Reveal.slide(0, 0);
     });
 
 
@@ -201,7 +261,7 @@
         }
         inFullScreen = true;
 
-        setTimeout(function() {
+        setTimeout(function () {
             Reveal.sync();
         }, 1500);
 
@@ -223,7 +283,7 @@
         }
         inFullScreen = false;
 
-        setTimeout(function() {
+        setTimeout(function () {
             Reveal.sync();
         }, 1500);
 

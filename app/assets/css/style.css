@@ -9181,6 +9181,20 @@ span.text-color {
     font-family: "sourcesanspro_regular", sans-serif;
     font-size: 90%; }
 
+.modal-dialog {
+  width: 90%;
+  height: 90%; }
+  .modal-dialog .modal-content {
+    height: auto;
+    min-height: 90%;
+    border-radius: 0; }
+  .modal-dialog .iframe-container iframe {
+    width: 100%; }
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    width: 90%; } }
+
 .tooltip-container {
   display: none;
   background-color: #fff;
@@ -9242,18 +9256,27 @@ img.footer-logo {
 
 a.footer-smpc {
   position: absolute;
-  width: 6%;
-  bottom: 5.8%;
-  left: 5.1%; }
+  width: 6.1%;
+  bottom: 4.5%;
+  left: 9.0%; }
   a.footer-smpc img {
+    position: relative;
+    width: 100%; }
+
+a.footer-home {
+  position: absolute;
+  width: 3.75%;
+  bottom: 4.5%;
+  left: 1.1%; }
+  a.footer-home img {
     position: relative;
     width: 100%; }
 
 a.footer-fullscreen {
   position: absolute;
   width: 3.75%;
-  bottom: 5.8%;
-  left: 1.1%; }
+  bottom: 4.5%;
+  left: 5.1%; }
   a.footer-fullscreen img {
     position: relative;
     width: 100%; }
