@@ -8901,20 +8901,27 @@ span.text-color {
   top: 33.6%;
   width: 78.4%; }
 
-.slides .slide-12-1 img.element-table-registratiestudie {
+.slides .slide-12-1 .element-table-registratiestudie-container {
   left: 5.5%;
   top: 22.9%;
-  width: 73.1%; }
+  width: 91.6%; }
+
+.slides .slide-12-1 img.element-table-registratiestudie {
+  position: relative;
+  float: left;
+  left: 0;
+  top: 0;
+  width: 79.8%; }
 
 .slides .slide-12-1 img.element-table-registratiestudie-info-1 {
-  left: 78.9%;
-  top: 33.7%;
-  width: 18.5%; }
+  right: 0;
+  top: 26%;
+  width: 20.2%; }
 
 .slides .slide-12-1 img.element-table-registratiestudie-info-2 {
-  left: 78.9%;
-  top: 54.3%;
-  width: 18.5%; }
+  right: 0;
+  bottom: 7%;
+  width: 20.2%; }
 
 .slides .slide-12-1 .details-bottom {
   left: 5.5%;
@@ -9213,6 +9220,11 @@ span.text-color {
     .tooltip-container .tooltip-close img {
       position: relative;
       width: 100%; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
 
 #tooltipDosisalgoritme {
   width: 21%; }

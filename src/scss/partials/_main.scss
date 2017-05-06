@@ -582,22 +582,32 @@ span.text-color {
 
   .slide-12-1 {
 
-    img.element-table-registratiestudie {
+    .element-table-registratiestudie-container {
       left: 5.5%;
       top: 22.9%;
-      width: 73.1%;
+      width: 91.6%;
+    }
+
+    img.element-table-registratiestudie {
+      position: relative;
+      float: left;
+      left: 0;
+      top: 0;
+      width: 79.8%;
     }
 
     img.element-table-registratiestudie-info-1 {
-      left: 78.9%;
-      top: 33.7%;
-      width: 18.5%;
+      //position: relative;
+      right: 0;
+      top: 26%;
+      width: 20.2%;
     }
 
     img.element-table-registratiestudie-info-2 {
-      left: 78.9%;
-      top: 54.3%;
-      width: 18.5%;
+      //position: relative;
+      right: 0;
+      bottom: 7%;
+      width: 20.2%;
     }
 
     .details-bottom {
@@ -1029,6 +1039,12 @@ span.text-color {
       width: 100%;
     }
   }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 #tooltipDosisalgoritme {
